@@ -39,6 +39,15 @@ provider "helm" {
   }
 }
 
+terraform {
+  required_providers {
+    postgresql = {
+      source = "cyrilgdn/postgresql"
+      version = "1.23.0"
+    }
+  }
+}
+
 provider "postgresql" {
   host      = module.cluster-infra.rds_address
   port      = module.cluster-infra.rds_port
