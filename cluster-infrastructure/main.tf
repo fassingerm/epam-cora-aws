@@ -50,7 +50,7 @@ provider "postgresql" {
 module "cluster-infra" {
   source                            = "git::https://github.com/epam/cloud-pipeline//deploy/infra/aws/terraform/cloud-native/cluster-infra?ref=f_aws_native_infra"
   deployment_name                   = "epamcora1"
-  deployment_env                    = "cora-env1"
+  deployment_env                    = "epamcora1"
   vpc_id                            = "vpc-05deec794c0d4e0c1"
   external_access_security_group_ids = ["sg-05fcc2187b2dfe967"]
   subnet_ids = ["subnet-0a16832c67515239b", "subnet-04243c22075f1627f", "subnet-003d978a107ffa704"]
