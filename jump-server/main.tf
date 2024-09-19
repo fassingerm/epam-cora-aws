@@ -15,8 +15,8 @@ provider "aws" {
 
 module jump-server {
   source                            = "git::https://github.com/epam/cloud-pipeline//deploy/infra/aws/terraform/cloud-native/jump-server?ref=f_aws_native_infra"
-  vpc_id                            = "vpc-0ea691b9b6fe97388"
-  subnet_id                         = "subnet-0abe89f1f176a7605"
+  vpc_id                            = "vpc-05deec794c0d4e0c1"
+  subnet_id                         = "subnet-04243c22075f1627f"
   iam_role_permissions_boundary_arn = "arn:aws:iam::590788709872:policy/CP-Service-Policy"
   deployment_name                   = "epamcora1"
   deployment_env                    = "cora-env1"
