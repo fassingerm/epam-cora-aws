@@ -51,13 +51,13 @@ module "cluster-infra" {
   source                            = "git::https://github.com/epam/cloud-pipeline//deploy/infra/aws/terraform/cloud-native/cluster-infra?ref=f_aws_native_infra"
   deployment_name                   = "epamcora1"
   deployment_env                    = "cora-env1"
-  vpc_id                            = "vpc-0ea691b9b6fe97388"
+  vpc_id                            = "vpc-05deec794c0d4e0c1"
   external_access_security_group_ids = ["sg-05fcc2187b2dfe967"]
-  subnet_ids = ["subnet-0abe89f1f176a7605", "subnet-03095cfb7187a209b", "subnet-0cea3a516980d1526"]
+  subnet_ids = ["subnet-0a16832c67515239b", "subnet-04243c22075f1627f", "subnet-003d978a107ffa704"]
   iam_role_permissions_boundary_arn = "arn:aws:iam::590788709872:policy/CP-Service-Policy"
-  eks_system_node_group_subnet_ids = ["subnet-0cea3a516980d1526"]
+  eks_system_node_group_subnet_ids = ["subnet-003d978a107ffa704"]
   cp_edge_elb_schema                = "internet-facing"
-  cp_edge_elb_subnet                = "subnet-0abe89f1f176a7605"
+  cp_edge_elb_subnet                = "subnet-04243c22075f1627f"
   cp_edge_elb_ip                    = "52.73.71.164"
   cp_api_srv_host                   = "epam.fascmari.people.aws.dev"
   cp_docker_host                    = "docker.epam.fascmari.people.aws.dev"
