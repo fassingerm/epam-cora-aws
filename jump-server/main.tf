@@ -19,5 +19,5 @@ module jump-server {
   subnet_id                         = "subnet-04243c22075f1627f"
   iam_role_permissions_boundary_arn = "arn:aws:iam::590788709872:policy/CP-Service-Policy"
   deployment_name                   = "epamcora1"
-  deployment_env                    = "cora-env1"
+  deployment_env                    = "epamcora1"
 }
