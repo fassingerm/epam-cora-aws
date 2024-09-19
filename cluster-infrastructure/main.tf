@@ -65,7 +65,7 @@ module "cluster-infra" {
   cp_gitlab_host                    = "git.epam.fascmari.people.aws.dev"
   eks_additional_role_mapping = [
     {
-      iam_role_arn  = "arn:aws:iam::590788709872:role/epamcora-terraform-epamcora-terraform-BastionExecutionRole"
+      iam_role_arn  = "arn:aws:iam::590788709872:role/epamcora-terraform-BastionExecutionRole"
       eks_role_name = "system:node:{{EC2PrivateDNSName}}"
       eks_groups = ["system:bootstrappers", "system:nodes"]
     }
