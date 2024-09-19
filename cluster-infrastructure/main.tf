@@ -48,7 +48,7 @@ provider "postgresql" {
 }
 
 module "cluster-infra" {
-  source                            = "git::https://github.com/epam/cloud-pipeline//deploy/infra/aws/terraform/cloud-native/cluster-infra?ref=f_aws_native_infra""
+  source                            = "git::https://github.com/epam/cloud-pipeline//deploy/infra/aws/terraform/cloud-native/cluster-infra?ref=f_aws_native_infra"
   deployment_name                   = "epamcora-terraform"
   deployment_env                    = "epamcora-terraform"
   vpc_id                            = "vpc-05deec794c0d4e0c1"
